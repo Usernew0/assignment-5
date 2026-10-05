@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  direction: rtl;
+}
+@media (min-width: 600px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.dashboard {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+.sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.sidebar .container {
+  padding: 24px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.sidebar .container .logo {
+  display: flex;
+  margin-bottom: 32px;
+  gap: 8px;
+  justify-content: flex-start;
+}
+.sidebar .container .logo .project-logo {
+  display: flex;
+  background: linear-gradient(90deg, #432dd7, #372aac);
+  padding: 8px;
+  border-radius: 10px;
+  align-items: center;
+}
+.sidebar .container .logo .project-logo img {
+  width: 25px;
+}
+
+.sidebar .container .logo .project-name h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.sidebar .container .logo .project-name p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(74, 85, 101);
+}
+
+.sidebar .container .nav {
+  display: flex;
+}
+.sidebar .container .nav li span img {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar .container .nav li .span-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4a5565;
+}
