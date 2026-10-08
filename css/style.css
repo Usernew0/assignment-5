@@ -21,11 +21,16 @@ html {
   }
 }
 
+/* start dashboard */
+
 .dashboard {
   display: flex;
   flex-flow: row nowrap;
   position: relative;
 }
+
+/* start sidebar */
+
 .sidebar {
   display: flex;
   flex-flow: column nowrap;
@@ -34,6 +39,7 @@ html {
   position: fixed;
   right: 0;
   top: 0;
+  background-color: #fff;
 }
 .sidebar .container {
   padding: 24px;
@@ -166,11 +172,18 @@ html {
   color: #374151;
 }
 
+/* end sidebar */
+
+/* start dashboard main */
+
 .dashboard .main {
   margin-right: 250px;
   padding: 32px;
   width: 100%;
 }
+
+/* start header dashboard */
+
 .dashboard .main .header {
   margin-bottom: 40px;
   box-shadow: 0px 2px 10px #e8eaea;
@@ -297,3 +310,187 @@ html {
   font-weight: 600;
   color: grey;
 }
+
+/* end dashboard header  */
+
+/* start dashboard summary cards */
+
+.dashboard .main .summary-cards {
+  gap: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.dashboard .main .summary-cards .card {
+  padding: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.dashboard .main .summary-cards .card .title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: grey;
+  margin-bottom: 8px;
+}
+.dashboard .main .summary-cards .card .price {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.dashboard .main .summary-cards .card .graph {
+  margin-top: 8px;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  align-items: center;
+}
+.dashboard .main .summary-cards .card .graph img {
+  width: 15px;
+  height: 15px;
+  color: #01a73e;
+}
+.dashboard .main .summary-cards .card .graph .percentage {
+  color: #01a73e;
+}
+.dashboard .main .summary-cards .card .graph .red {
+  color: #e6000b;
+}
+
+/* end dashboard summary cards */
+
+/* start dashboard widgets */
+
+.dashboard .main .dashboard-widgets {
+  display: grid;
+  grid-template-areas:
+    "item1 item2 item2"
+    "item3 item2 item2"
+    "item4 item5 item6"
+    "item4 item7 item6";
+  gap: 10px;
+}
+.dashboard .main .dashboard-widgets .notifications-card {
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  grid-area: item1;
+}
+.dashboard .main .dashboard-widgets .notifications-card .title {
+  margin-bottom: 24px;
+}
+.dashboard .main .dashboard-widgets .notifications-card .title h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  width: fit-content;
+}
+
+.dashboard .main .dashboard-widgets .notifications-card .btn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  color: #155dfc;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f3f4f6;
+}
+.dashboard .main .dashboard-widgets .notifications-card .btn:hover {
+  color: #1447e6;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .create-account,
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 12px;
+  background-color: #eff6ff;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border-left: 4px solid #2b7fff;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card {
+  background-color: #f1fcf5;
+  border-left: 4px solid #00c950;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .create-account .notif-icon,
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card .notif-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbeafe;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card .notif-icon {
+  background-color: #dafde6;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .create-account .notif-icon img,
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card .notif-icon img {
+  width: 20px;
+}
+
+.dashboard .main .dashboard-widgets .notifications-card .notifications .create-account .notif-content,
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card .notif-content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: 100%;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .create-account .notif-content .cont-name,
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card .notif-content .cont-name {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .create-account .notif-content .cont-name h4,
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card .notif-content .cont-name h4 {
+  color: #101828;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .create-account .notif-content .cont-name span,
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card .notif-content .cont-name span {
+  color: #155dfb;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card .notif-content .cont-name span {
+  color: #00a63e;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .create-account .notif-content p,
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card .notif-content p {
+  color: #4a5565;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.dashboard .main .dashboard-widgets .notifications-card .notifications .create-account .notif-content span,
+.dashboard .main .dashboard-widgets .notifications-card .notifications .add-card .notif-content span {
+  color: #6a7282;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+/* end dashboard widgets */
+
+/* end dashboard */
