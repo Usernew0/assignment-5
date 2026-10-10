@@ -503,6 +503,205 @@ html {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   grid-area: item2;
 }
+.dashboard .main .dashboard-widgets .transactions-card .title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.dashboard .main .dashboard-widgets .transactions-card .title h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.dashboard .main .dashboard-widgets .transactions-card .title span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4a5565;
+  transition: all 0.2s;
+}
+.dashboard .main .dashboard-widgets .transactions-card .title span:hover {
+  cursor: pointer;
+  color: #101828;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content {
+  overflow-x: auto;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table thead {
+  text-align: right;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table thead .tr {
+  border-bottom: 1px solid #f3f4f6;
+  width: 100%;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table thead .tr th {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #364153;
+  padding: 12px 8px;
+}
+
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr:last-child {
+  border-bottom: none;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .default {
+  padding: 12px 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4a5565;
+  vertical-align: middle;
+}
+
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .person {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 12px;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .name {
+  font-weight: 600;
+  color: #101828;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .desc {
+  font-size: 12px;
+  color: #6a7282;
+}
+
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second img {
+  width: 15px;
+  vertical-align: middle;
+  margin-inline-end: 6px;
+}
+
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second .category {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second .category.income {
+  background: #dbfde7;
+  color: #0f703c;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second .category.utensils {
+  background: #ffedd5;
+  color: #9e2d01;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second .category.shop {
+  background: #daebff;
+  color: #183cb9;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second .category.users {
+  background: #f3e9ff;
+  color: #6f11b1;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second .category.briefcase {
+  background: #dbfde7;
+  color: #0f703c;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second .category.fuel {
+  background: #ffe3e3;
+  color: #9e0612;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second .category.heart {
+  background: #e1e6fe;
+  color: #372aac;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second .category.gym {
+  background: #cefafe;
+  color: #015f78;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .second .category.edu {
+  background: #dbfde7;
+  color: #0f703c;
+}
+
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .third {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4a5565;
+  white-space: nowrap;
+}
+
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .icon-box img {
+  width: 18px;
+  height: 18px;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .icon-box.utensils {
+  background: #ffedd4;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .icon-box.shop {
+  background: #dbeafe;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .icon-box.fuel {
+  background: #ffe2e2;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .icon-box.heart {
+  background: #e1e6fe;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .icon-box.gym {
+  background: #cefafe;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .first .icon-box.edu {
+  background: #d0fae5;
+}
+
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .status {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .status.completed {
+  background: #dcfce7;
+  color: #166534;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .fifth {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .fifth.positive {
+  color: #16a34a;
+}
+.dashboard .main .dashboard-widgets .transactions-card .content table tbody tr .fifth.negative {
+  color: #dc2626;
+}
 /* end transactions-card */
 
 /* start bills card  item3*/
@@ -928,7 +1127,7 @@ html {
 .green {
   background-color: #10b981;
 }
-.red {
+.bg-red {
   background-color: #ef4444;
 }
 .dashboard .main .dashboard-widgets .income-vs-expenses-card .content .chart-title .shape {
@@ -988,6 +1187,40 @@ html {
 /* end income-vs-expenses-card */
 
 /* start payment-methods-card item6 */
+.dashboard .main .dashboard-widgets .payment-methods-card {
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  grid-area: item6;
+}
+.dashboard .main .dashboard-widgets .payment-methods-card .title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.dashboard .main .dashboard-widgets .payment-methods-card .title h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.dashboard .main .dashboard-widgets .payment-methods-card .title span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4a5565;
+  transition: all 0.2;
+}
+.dashboard .main .dashboard-widgets .payment-methods-card .title span:hover {
+  cursor: pointer;
+  color: #101828;
+}
+
+.dashboard .main .dashboard-widgets .payment-methods-card .cards .card {
+  margin-bottom: 16px;
+}
+
 /* end payment-methods-card item6 */
 
 /* start account-summary-card item7 */
