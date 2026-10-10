@@ -377,7 +377,7 @@ html {
   gap: 16px;
 }
 
-/* start notifications card */
+/* start notifications card  item1*/
 .dashboard .main .dashboard-widgets .notifications-card {
   padding: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -495,7 +495,7 @@ html {
 }
 /* end notifications card  */
 
-/* start transactions-card */
+/* start transactions-card  item2*/
 .dashboard .main .dashboard-widgets .transactions-card {
   padding: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -505,7 +505,7 @@ html {
 }
 /* end transactions-card */
 
-/* start bills card */
+/* start bills card  item3*/
 .dashboard .main .dashboard-widgets .bills-card {
   padding: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -638,7 +638,7 @@ html {
 
 /* end bills card */
 
-/* start budget-overview-card */
+/* start budget-overview-card item4 */
 .dashboard .main .dashboard-widgets .budget-overview-card {
   padding: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -870,6 +870,121 @@ html {
   background-color: #01a73e;
 }
 /* end budget-overview-card */
+
+/* start income-vs-expenses-card  item5*/
+.dashboard .main .dashboard-widgets .income-vs-expenses-card {
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  grid-area: item5;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .title h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .title span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4a5565;
+  transition: all 0.2;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .title span:hover {
+  cursor: pointer;
+  color: #101828;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .chart-title {
+  margin-bottom: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .chart-title .income,
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .chart-title .exp {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .chart-title .income span,
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .chart-title .exp span {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #64748b;
+}
+.green {
+  background-color: #10b981;
+}
+.red {
+  background-color: #ef4444;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .chart-title .shape {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .grouped-chart {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-block: 16px;
+  height: 100%;
+}
+
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .grouped-chart .chart {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 4px;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .grouped-chart .chart .graph {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  gap: 2px;
+  height: 100px;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .grouped-chart .chart .graph .income,
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .grouped-chart .chart .graph .exp {
+  width: 16px;
+  border-radius: 3px 3px 0 0;
+  transition: all 0.3s;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .grouped-chart .chart .graph .income {
+  height: 95px;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .grouped-chart .chart .graph .income:hover {
+  opacity: 0.8;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .grouped-chart .chart .graph .exp {
+  height: 42px;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .grouped-chart .chart .graph .exp:hover {
+  opacity: 0.8;
+}
+.dashboard .main .dashboard-widgets .income-vs-expenses-card .content .grouped-chart .chart .graph-name {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #64748b;
+  margin-top: 8px;
+}
+/* end income-vs-expenses-card */
 
 /* end dashboard widgets */
 
